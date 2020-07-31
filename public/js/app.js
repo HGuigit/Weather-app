@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent='';
             messageTwo.textContent=data.error
         }else{
-            messageOne.innerHTML = `Local:  ${data.Local}<br>Tempo:  ${data.Data.weather_description}<br>Temperatura:  ${data.Data.temperature}Cº<br>Sensação térmica:  ${data.Data.feelslike}Cº`
+            messageOne.innerHTML = `Local:  ${data.Local}<br>Tempo:  ${data.Data.weather_description}<br>Temperatura:  ${data.Data.temperature}Cº<br>Sensação térmica:  ${data.Data.feelslike}Cº<br>Chance de chuva:  ${data.Data.precip}<br>Umidade do Ar:  ${data.Data.humidity}<br>Velocidade do Vento:  ${data.Data.wind_speed}<br>Hora Local:  ${data.Data.time}`
             messageTwo.textContent=''
         }
         })
